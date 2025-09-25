@@ -3,7 +3,7 @@ import React, { useState } from "react";
 // You must include this in your HTML or CSS for the Minecraft-style font:
 // <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
 
-const MinecraftCard = () => {
+const QuestCard = () => {
   const [code, setCode] = useState("");
   const [message, setMessage] = useState("");
 
@@ -107,4 +107,4 @@ const MinecraftCard = () => {
   );
 };
 
-export default MinecraftCard;
+export default QuestCard;
