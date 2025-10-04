@@ -12,8 +12,12 @@ const QuestCard = () => {
   };
 
   const handleCodeCheck = () => {
-    if (code === "1111") {
-      setMessage("🎉 Congratulations!");
+    if (
+      code.toLowerCase().replace(/,/g, "").replace(/\s+/g, "") === "qh5qh2#"
+    ) {
+      setMessage(
+        "🎉 Congratulations! Your next clue: put the empty paper from the box in the water"
+      );
     } else {
       setMessage("❌ Incorrect code. Try again.");
     }
@@ -51,7 +55,7 @@ const QuestCard = () => {
           textShadow: "1px 1px #000",
         }}
       >
-        Press me
+        Press here to find the secret code
       </button>
 
       <div style={{ marginBottom: "10px" }}>
